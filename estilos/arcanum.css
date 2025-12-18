@@ -1,0 +1,202 @@
+/* Tarjeta de información personal */
+.card-personal {
+  display: flex;
+  align-items: center;
+  background: rgba(28, 59, 111, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 0 16px #142d4c;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.avatar-personal {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 2rem;
+  border: 3px solid #7aa0ff;
+}
+.info-personal {
+  flex: 1;
+}
+
+/* Listas visuales de conocimientos */
+.lenguajes-lista, .bd-lista, .web-lista, .movil-lista, .escritorio-lista, .juegos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 1.2rem 0;
+  padding: 0;
+  list-style: none;
+}
+.lenguaje-item {
+  display: flex;
+  align-items: flex-start;
+  background: rgba(20, 45, 76, 0.5);
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  box-shadow: 0 0 8px #1c3b6f;
+}
+.desc-lenguaje, .desc-bd, .desc-web, .desc-movil, .desc-escritorio, .desc-juegos {
+  font-size: 0.98rem;
+  color: #aad4ff;
+  margin-top: 0.3rem;
+  font-style: italic;
+  display: block;
+}
+.icono-lenguaje {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.7rem;
+}
+.nivel {
+  margin-left: 0.7rem;
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+.nota-lenguaje {
+  font-size: 0.95rem;
+  color: #aad4ff;
+  margin-top: -0.5rem;
+}
+.bd-lista li, .web-lista li, .movil-lista li, .escritorio-lista li, .juegos-lista li {
+  background: rgba(20, 45, 76, 0.5);
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.08rem;
+  box-shadow: 0 0 8px #1c3b6f;
+}
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background-color: #0d1b2a;
+  color: #cce0ff;
+  display: flex;
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 220px;
+  right: 0;
+  background-color: #1c3b6f;
+  padding: 1rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #142d4c;
+  padding-top: 6rem;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.sidebar ul li a {
+  color: #a8d0ff;
+  text-decoration: none;
+  display: block;
+  padding: 0.8rem 1rem;
+  transition: background 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #2b4f86;
+  color: #fff;
+  border-radius: 4px;
+}
+
+main {
+  margin-left: 220px;
+  padding-top: 12rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  color: #7aa0ff;
+  border-bottom: 1px solid #7aa0ff;
+  padding-bottom: 0.5rem;
+}
+
+.arcanum-section {
+  display: none;
+}
+
+.arcanum-section.active {
+  display: block;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.topnav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #1c3b6f;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.topnav ul li {
+  margin: 0 1rem;
+}
+
+.topnav ul li a {
+  color: #a8d0ff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.topnav ul li a:hover {
+  color: #ffffff;
+  background-color: #2b4f86;
+  border-radius: 6px;
+}
+
+.datos-personales {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.datos-personales li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #aad4ff;
+}
+
+#personal p {
+  margin-top: 1rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: #d0e8ff;
+}
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Proyectos - Neo-Arcanum</title>
+	<link rel="stylesheet" href="../estilos/estilos.css" />
+</head>
+<body>
+	<header id="main-header">
+		<nav>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="../paginas/arcanum.html">Arcanum</a></li>
+                <li><a href="../paginas/proyectos.html">Proyectos</a></li>
+			</ul>
+		</nav>
+		<h1>Proyectos</h1>
+		<p>Proyectos actuales en desarrollo — magia aplicada al software</p>
+	</header>
+
+	<main>
+		<section class="pagina-intro">
+			<h2>🛠️ Trabajos en curso</h2>
+			<p>A continuación tienes un resumen de los proyectos que estoy desarrollando actualmente. Cada entrada incluye una breve descripción, características principales y enlaces para más información.</p>
+		</section>
+
+		<section class="lista-proyectos">
+			<article class="proyecto">
+				<img src="../imagenes/proyecto1.jpg" alt="App contabilidad móvil" />
+				<div class="proyecto-contenido">
+					<h3>Aplicación de contabilidad para móviles</h3>
+					<p>App responsiva para gestión contable en dispositivos móviles, optimizada para pequeñas empresas y autónomos.</p>
+					<ul>
+						<li>Registro y categorización de ingresos/gastos</li>
+						<li>Reportes mensuales y visualizaciones</li>
+						<li>Exportación a CSV y copias de seguridad en la nube</li>
+						<li>Autenticación segura y sincronización entre dispositivos</li>
+					</ul>
+					<p><a href="#">Ver más detalles</a></p>
+				</div>
+			</article>
+
+			<article class="proyecto">
+				<img src="../imagenes/proyecto2.jpg" alt="App contabilidad escritorio" />
+				<div class="proyecto-contenido">
+					<h3>Aplicación de contabilidad para escritorio</h3>
+					<p>Sistema de contabilidad de escritorio para operaciones más avanzadas y gestión local de empresas medianas.</p>
+					<ul>
+						<li>Gestión de múltiples empresas y usuarios</li>
+						<li>Conciliación bancaria y control de inventarios</li>
+						<li>Generación de facturas y control de impuestos</li>
+						<li>Integración con servicios de backup y exportación</li>
+					</ul>
+					<p><a href="#">Ver más detalles</a></p>
+				</div>
+			</article>
+
+			<article class="proyecto">
+				<img src="../imagenes/proyecto3.jpg" alt="Sistema de promoción de servicios" />
+				<div class="proyecto-contenido">
+					<h3>Sistema de Promoción de servicios con productos y servicios</h3>
+					<p>Plataforma para promocionar servicios combinados con catálogos de productos, pensada para profesionales y agencias.</p>
+					<ul>
+						<li>Catálogo de productos y paquetes de servicios</li>
+						<li>Sistema de promociones, cupones y descuentos</li>
+						<li>Panel de administración para ofertas y analíticas</li>
+						<li>Carrito de compras y pasarelas de pago</li>
+					</ul>
+					<p><a href="#">Ver más detalles</a></p>
+				</div>
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<p>© 2025 Neo-Arcanum</p>
+	</footer>
+
+	<script src="../scripts/funciones.js"></script>
+	<script>
+		// Mantener comportamiento de ocultar header al hacer scroll (igual que en index)
+		let lastScroll = 0;
+		const header = document.getElementById('main-header');
+		window.addEventListener('scroll', function() {
+			const currentScroll = window.pageYOffset;
+			if (currentScroll > lastScroll && currentScroll > 80) {
+				header.style.top = '-120px';
+				header.style.opacity = '0';
+			} else {
+				header.style.top = '0';
+				header.style.opacity = '1';
+			}
+			lastScroll = currentScroll;
+		});
+	</script>
+</body>
+</html>
+
